@@ -105,7 +105,7 @@ footer {
     font-weight: bold;
     cursor: pointer;
     padding: 5px 10px;
-    width: 160px;
+    width: 220%;
     margin-top: 5%;
     margin-left: 5%;
 }
@@ -125,11 +125,11 @@ footer {
 .dropdown_content {
     display: none;
     position: absolute;
-    min-width: 160px;
+    min-width: 220%;
     box-shadow: 0 0 3px gainsboro;
     background-color: white;
     z-index: 1;
-    width: 160px;
+    width: 220%;
     margin-left: 5%;
 }
 
