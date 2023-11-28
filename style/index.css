@@ -191,7 +191,7 @@ footer {
 
     #box1, #box2, #box3 {
         flex: 1;
-        max-width: 100%;
+        max-width: 760px;
         margin: 3%;
     }
 }
