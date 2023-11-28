@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/web_project.css">
+    <title>Project</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h2>Xueqing's Website</h2>
+    </header>
+    
+    <!-- navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- main -->
+    <main>
+        <div>
+            <video controls muted loop>
+                <source src="../video/travel_planner.mp4">
+                <source src="../video/travel_planner.webm">
+                This browser does not support HTML5 video.
+            </video>
+        </div>
+        
+        <!-- dropdown -->
+        <div class="dropdown">
+            <button>Menu</button>
+            <div class="dropdown_content">
+                <a href="index.html">Home</a>
+                <a href="project.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <article class="project_intro">
+            <h1>Introduction</h1>
+            <p>The objective of our website is to allow travelers to record their
+                customized travel plans, plus a collection of different types of websites, such as
+                specialized hotel booking sites, transportation booking sites, and local weather
+                forecasting sites. In addition, we also wanted to allow travelers to share their
+                trips and view others' travel experiences, so we added a public user blog feature
+                as well.</p>
+            <img src="../img/flowchart.png">
+            
+            <h1>Languages and Framework</h1>
+            <p>We applied Flask, which is one of the web programming
+                frameworks written in Python, to write code for different functions on our website.
+                We chose SQLite as the database to store users' information. Apart from
+                that, we also applied HTML to display these functions on a web browser and
+                CSS to adjust the layout and improve the presentation of our website.</p>
+            
+            <h1>Website Component</h1>
+            <h2>Login/register</h2>
+            <p>To better manage the information of different users, we designed
+                login and registration pages. When entering our website, users will be
+                required to first register an account or log in to their account. To realize these
+                functions, we create a table that is composed of five columns in the database.</p>
+            <h2>Create/view travel plans</h2>
+            <p>After finishing logging in, users will enter the homepage.
+                By clicking the "create a new plan" button, they will be directed to a page
+                where they can enter their origin, start date, end date, and travel plans. We
+                created another table to store this information.</p>
+            <h2>Create/view travel blogs</h2>
+            <p>By clicking the "create a new blog" button, users will be directed to a page where
+                they can enter the title and content of the blog.We created another table to store
+                this information. After clicking "save", they will go back to the homepage. To
+                view all the blogs, users can click the "view plans" button.</p>
+            <h2>Other functions</h2>
+            <p>We applied the idea of building a navigation on our website
+                and created a web page that collects some other travel-related websites. By
+                clicking the hyperlinks shown on this web page, users can visit other websites to
+                book tickets or hotels.</p>
+            <h2>Play around with a part of our website!</h2>
+        </article>
+
+        <div>
+            <iframe src="../project_display/openpage.html"></iframe>
+        </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>Author: Xueqing Ding</p>
+        <p>&copy; 2023 Copyright reserved</p>
+        <a href="mailto:xd72@duke.edu">xd72@duke.edu</a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+
+/* header */
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    padding: 2px;
+}
+
+
+/* navigation bar */
+
+nav {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    font-size: 18px; 
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+li a:hover {
+    border-bottom: 2px solid white;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* Homepage */
+
+/* Banner */
+
+.banner {
+    background-image: url("../img/xueqing1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.banner-content {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 55%;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#my_name {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* Dropdown */
+
+.dropdown button {
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 10px;
+    width: 160px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.dropdown_content a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 5px 10px;
+}
+
+.dropdown {
+    position:absolute;
+    display: inline-block;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0 0 3px gainsboro;
+    background-color: white;
+    z-index: 1;
+    width: 160px;
+    margin-left: 5%;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: rgb(222, 221, 221);
+}
+
+/* gallery */
+
+.container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#box1, #box2, #box3 {
+    flex: 1;
+    max-width: 400px;
+    border: 3px solid lightgrey;
+    box-shadow: 2px 4px 4px 4px lightgrey;
+}
+
+#box1 img, #box2 img, #box3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+#box1 p, #box2 p, #box3 p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#box1 p::before{
+    content:"💻"
+}
+
+#box2 p::before{
+    content:"👧"
+}
+
+#box3 p::before{
+    content:"😊"
+}
+
+/* responsive */
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #box1, #box2, #box3 {
+        flex: 1;
+        max-width: 100%;
+        margin: 3%;
+    }
+}
