@@ -1,2 +1,2 @@
-# xueqingkathyding.github.io
+# Personal Portfolio
 Xueqing's personal portfolio
